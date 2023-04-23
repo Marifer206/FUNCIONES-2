@@ -57,7 +57,7 @@ $$f(x) = \frac{x}{x^{1/3}-1}$$
 ### :round_pushpin: PUNTO #1 
 + De los retos anteriores seleciones 3 funciones y escribalas en forma de lambdas.
 
-#### PUNTO #1.1 
+#### :purple_heart: PUNTO #1.1 :purple_heart:
 
 #### :space_invader: CODIGO DEL PROGRAMA
 ```ruby
@@ -70,7 +70,7 @@ s
 <figcaption><b> </b></figcaption></figure>
 </div>
 
-#### PUNTO #1.2 
+#### :purple_heart: PUNTO #1.2 :purple_heart:
 
 #### :space_invader: CODIGO DEL PROGRAMA
 ```ruby
@@ -83,7 +83,7 @@ s
 <figcaption><b> </b></figcaption></figure>
 </div>
 
-#### PUNTO #1.3 
+#### :purple_heart: PUNTO #1.3 :purple_heart:
 
 #### :space_invader: CODIGO DEL PROGRAMA
 ```ruby
@@ -100,7 +100,7 @@ s
 ### :round_pushpin: PUNTO #2
 + De los retos anteriores seleciones 3 funciones y escribalas con argumentos no definidos (*args).
 
-#### PUNTO #2.1 
+#### :purple_heart: PUNTO #2.1 :purple_heart:
 
 #### :space_invader: CODIGO DEL PROGRAMA
 ```ruby
@@ -113,7 +113,7 @@ s
 <figcaption><b> </b></figcaption></figure>
 </div>
 
-#### PUNTO #2.2 
+#### :purple_heart: PUNTO #2.2 :purple_heart:
 
 #### :space_invader: CODIGO DEL PROGRAMA
 ```ruby
@@ -126,7 +126,7 @@ s
 <figcaption><b> </b></figcaption></figure>
 </div>
 
-#### PUNTO #2.3 
+#### :purple_heart: PUNTO #2.3 :purple_heart:
 
 #### :space_invader: CODIGO DEL PROGRAMA
 ```ruby
