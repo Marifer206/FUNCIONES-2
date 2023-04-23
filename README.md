@@ -26,10 +26,10 @@ $$f(x) = \frac{x}{x^{1/3}-1}$$
 #### :space_invader: CODIGO DEL PROGRAMA
 
 ```ruby
-if __name__ == "__main__":
-  a = int(input("Ingrese valor de X: "))
-  suma = (lambda x : x / (x**(1/3)-1))(a)
-  print("La funcion para cuando X vale " + str(a) + ", Y vale " + str(suma))
+if __name__ == "__main__": # Funcion main 
+  a = int(input("Ingrese valor de X: ")) # Se declara a y se inicializa con el valor de X solicitado al usuario
+  suma = (lambda x : x / (x**(1/3)-1))(a) # Se realiza la operacion remplazando X con el valor anteriormente dado
+  print("La funcion para cuando X vale " + str(a) + ", Y vale " + str(suma)) # Se imprime el valor de Y 
 ```
 
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
