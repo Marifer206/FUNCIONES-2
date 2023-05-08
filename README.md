@@ -9,7 +9,16 @@ REALIZANDO NUESTRO RETO #9
 #### :space_invader: CODIGO DEL PROGRAMA
 
 ```ruby
-
+if __name__ == '__main__':  # Funcion main 
+    # Pedimos la usuario que ingrese los numeros de los cuales quiera saber su MCD
+    num1 = int(input("Ingrese el primer número entero: ")) 
+    num2 = int(input("Ingrese el segundo número entero: "))
+    # Definimos la funcion lambda para calcular el MCD
+    resultado = lambda a, b: a if b == 0 else resultado(b, a % b) # Si b = 0, devuelve el valor de a. Si b no es 0, se realiza una llamada recursiva a la misma función lambda con los argumentos intercambiados: resultado(b, a % b). En esta llamada recursiva, a se asigna con el valor actual de b, y b se asigna con el resultado de a % b, que es el residuo de la división de a entre b.
+    # Se llama a la funcion tomando como argumnetos num1 y num 2
+    mcd = resultado(num1, num2)
+    # Se imprime el resultado
+    print("El máximo común divisor de " + str(num1) + " y " + str(num2) + " es: " + str(mcd))
 ```
 
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
@@ -27,9 +36,11 @@ $$f(x) = \frac{x}{x^{1/3}-1}$$
 
 ```ruby
 if __name__ == "__main__": # Funcion main 
-  a = int(input("Ingrese valor de X: ")) # Se declara a y se inicializa con el valor de X solicitado al usuario
+  a = int(input("Ingrese valor de X: ")) # Se declara a y se inicializa con el valor de x solicitado al usuario
+  # Definimos la funcion lambda para calcular y cuando x vale a
   suma = (lambda x : x / (x**(1/3)-1))(a) # Se realiza la operacion remplazando X con el valor anteriormente dado
-  print("La funcion para cuando X vale " + str(a) + ", Y vale " + str(suma)) # Se imprime el valor de Y 
+  # Se imprime el valor de Y 
+  print("La funcion para cuando X vale " + str(a) + ", Y vale " + str(suma)) 
 ```
 
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
@@ -46,7 +57,27 @@ if __name__ == "__main__": # Funcion main
 #### :space_invader: CODIGO DEL PROGRAMA
 
 ```ruby
+# Definimos la funcion y que tome como argumentos a, b y es_mayor para que por defecto tome al numero como mayor 
+def mayor_menor(a,b, es_menor=False):
+    if es_menor:
+        return min(a,b) # Retorna el menor
+    elif a == b: # si no es mayor  menor alguno son iguales
+        print("los numeros " + str(a) + " y " + str(b) + " son iguales")
+    else:
+        return min(a,b) # Retorna el menor
 
+if __name__ == "__main__": # Funcion main 
+        # Pedimos la usuario que ingrese los numeros
+    a = float(input("Ingrese el número a: "))
+    b = float(input("Ingrese el número b: "))
+    
+    # Obtener el número mayor por defecto
+    mayor = mayor_menor(a, b,)
+    print("El número mayor es:" + str(mayor))
+    
+    # Obtener el número menor
+    menor = mayor_menor(a, b, es_menor=True)
+    print("El número menor es:", menor)
 ```
 
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
@@ -64,14 +95,12 @@ if __name__ == "__main__": # Funcion main
 
 #### :space_invader: CODIGO DEL PROGRAMA
 ```ruby
-calcular_cantidad_carne_aves = lambda n_gallinas, m_gallos, k_pollitos: (n_gallinas * 6) + (m_gallos * 7) + (k_pollitos * 1)
-
 if __name__ == '__main__':
     # Pedimos al usuario las cantidades de aves
     n_gallinas = int(input("Ingrese la cantidad de gallinas: "))
     m_gallos = int(input("Ingrese la cantidad de gallos: "))
     k_pollitos = int(input("Ingrese la cantidad de pollitos: "))
-
+    calcular_cantidad_carne_aves = lambda n_gallinas, m_gallos, k_pollitos: (n_gallinas * 6) + (m_gallos * 7) + (k_pollitos * 1)
     # Calculamos la cantidad de carne de aves
     cantidad_carne = calcular_cantidad_carne_aves(n_gallinas, m_gallos, k_pollitos)
 
@@ -90,7 +119,24 @@ if __name__ == '__main__':
 
 #### :space_invader: CODIGO DEL PROGRAMA
 ```ruby
-s
+if __name__ == "__main__":
+    # Preguntar al usuario cuantas unidades de cada producto quiere
+    panes = float(input("Ingrese la cantidad de Panes? ")) 
+    bolsas_leche = float(input("Ingrese la cantidad de Bolsas de leche? "))
+    huevitos = float(input("Ingrese la cantidad de Huevos ? "))
+    # Preguntar al usuario cual es el monto que va a pagar 
+    saldo = float(input("Monto con el cual va a pagar: "))
+    # Definir la funcion lambda para calcular 
+    suma = lambda panes,bolsas_leche,huevitos,saldo: (saldo-((panes*300)+(bolsas_leche*3300)+(huevitos*350)))
+    # Definir los argumentos que toma la funcion lambda
+    vueltas = suma(panes,bolsas_leche,huevitos,saldo)
+# Se imprime el resultado dependiento si hay o no vueltas o si queda una deuda
+if vueltas < 0:
+    print("Lo siento, debes pagar un adicional de:" + str(abs(vueltas)))
+elif vueltas == 0:
+    print("No hay vueltas.")
+else:
+    print("Tus vueltas son:" + str(vueltas))
 ```
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
@@ -103,7 +149,17 @@ s
 
 #### :space_invader: CODIGO DEL PROGRAMA
 ```ruby
-s
+if __name__ == "__main__":
+    # se piden al usuario las variables 
+    prestamo_inicial = float(input("Prestamo inicial ")) #pide valores
+    tasa_interes = float(input("Tasa de interes "))
+    tiempo = float(input("Tiempo en meses "))
+    # Se defininen la funcion lambda para calcular el total del prestamo
+    valor_final = lambda prestamo_inicial,tasa_interes,tiempo: prestamo_inicial*((1 + tasa_interes/12)**tiempo)
+    # Se llama a la funcion y que tome como argumentos los dados por el usuario
+    valor_prestamo= valor_final(prestamo_inicial,tasa_interes,tiempo)
+    # Imprime el resultado
+    print("El valor final del préstamo es: " + str(valor_final)) #imprime el resultado
 ```
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
@@ -254,12 +310,13 @@ else:
 + Crear cuenta en stackoverflow y adjuntar imagen en el repo
 
 <div align='center'>
-<figure> <img https://i.postimg.cc/yNZCPb3k/image.png src=" alt="" width="700" height="auto"/></br>
+<figure> <img src=" https://i.postimg.cc/yNZCPb3k/image.png alt="" width="700" height="auto"/></br>
 <figcaption><b> </b></figcaption></figure>
 </div>
 
 ### :round_pushpin: PUNTO #6 
 + Cosas de adultos....ir a linkedin y crear perfil....NO IMPORTA que estén iniciando, si tienen tiempo para redes poco útiles como fb, insta, o tiktok tienen tiempo para crear un perfil mamalon. Dejar enlace en el repo.
 
+[:star: Link de mi cuenta :star:](https://www.linkedin.com/in/maria-fernanda-leon-montoya-515704275/)
 
 ## :sparkles: Esto es todo hoy amigos :blush:, espero poder haberlos ayudado he inspirado para encontar nuevas solociones para nuevos retos :sparkles: 
