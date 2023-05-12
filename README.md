@@ -310,7 +310,7 @@ else:
 + Crear cuenta en stackoverflow y adjuntar imagen en el repo
 
 <div align='center'>
-<figure> <img src=" https://i.postimg.cc/yNZCPb3k/image.png alt="" width="700" height="auto"/></br>
+<figure> <img src="https://i.postimg.cc/yNZCPb3k/image.png alt="" width="700" height="auto"/></br>
 <figcaption><b> </b></figcaption></figure>
 </div>
 
