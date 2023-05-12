@@ -176,7 +176,7 @@ if __name__ == "__main__":
 
 #### :space_invader: CODIGO DEL PROGRAMA
 ```ruby
-# Función con argumentos no definidos
+# Definimos la función calcular_valor_prestamo con argumentos no definidos
 def calcular_valor_prestamo(*args) -> float:
     prestamo = args[0]
     tasa_interes = args[1]
@@ -185,13 +185,16 @@ def calcular_valor_prestamo(*args) -> float:
     return prestamo + meses * interes
 
 if __name__ == '__main__':
-    prestamo = float(input("Ingrese el valor del préstamo en pesos: "))
-    tasa_interes = float(input("Ingrese la tasa de interés en porcentaje: "))
-    meses = int(input("Ingrese el número de meses para el préstamo: "))
-    valor_prestamo = calcular_valor_prestamo(prestamo, tasa_interes, meses)
+    # Se piden los valores al usuario
+    p = float(input("Ingrese el valor del préstamo en pesos: "))
+    t_i = float(input("Ingrese la tasa de interés en porcentaje: "))
+    m = int(input("Ingrese el número de meses para el préstamo: "))
+    # Se llama a la funcion y toma los argumentos anteriormente dados por el usuario
+    valor_prestamo = calcular_valor_prestamo(p, t_i, m)
     
-    # Mostramos los resultados
+    # Mostramos o imprimimos los resultados
     print("El valor a pagar es de: " + str(valor_prestamo))
+
 ```
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
@@ -204,7 +207,38 @@ if __name__ == '__main__':
 
 #### :space_invader: CODIGO DEL PROGRAMA
 ```ruby
-s
+# Definimos la función calcular_volumen con argumentos no definidos
+def calcular_volumen(*args):
+    radio_esfera = args[0]
+    radio_cono = args[1]
+    altura_cono = args[2]
+
+    volumen_esfera = (4/3) * (radio_esfera**3) * math.pi
+    volumen_cono = (altura_cono/3) * (radio_cono**2) * math.pi
+    return volumen_esfera + volumen_cono    
+
+# Definimos la función calcular_area con argumentos no definidos
+def calcular_area(*args):
+    radio_esfera = args[0]
+    radio_cono = args[1]
+    altura_cono = args[2]
+    area_esfera = 4 * math.pi * radio_esfera**2
+    altura_oblicua = math.sqrt(altura_cono*2 + radio_cono*2)
+    area_cono = (math.pi * radio_cono * altura_oblicua) + (math.pi * radio_cono**2)
+    return area_esfera + area_cono
+
+if __name__ == '__main__':
+    # Se piden los valores al usuario
+    rad_e = float(input("Ingrese el radio de la esfera en cm: "))
+    rad_c = float(input("Ingrese el radio del cono en cm: "))
+    alt_c = float(input("Ingrese la altura del cono en cm: "))
+    # Se llama a las funciones y toman los argumentos anteriormente dados por el usuario
+    vol = calcular_volumen(rad_e, rad_c, alt_c)
+    area = calcular_area(rad_e, rad_c, alt_c)
+    
+    # Mostramos los resultados
+    print("El volumen de la figura es: " + str(vol) + " cm^3")
+    print("El área de la figura es: " + str(area) + " cm^2") 
 ```
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
@@ -217,7 +251,21 @@ s
 
 #### :space_invader: CODIGO DEL PROGRAMA
 ```ruby
-s
+# Definimos la función calcular_contagios con argumentos no definidos
+def calcular_contagios(*args):
+    contagios_actuales = args[0]
+    dias_transcurridos = args[1]
+    return contagios_actuales * (2 ** dias_transcurridos)
+
+if __name__ == '__main__':
+    # Se piden los valores al usuario
+    c_a = int(input("Ingrese el número de contagiados actuales: "))
+    d_t = int(input("Ingrese el número de días a partir de hoy: "))
+    # Se llama a la funcion y toma los argumentos anteriormente dados por el usuario
+    t_c = calcular_contagios(c_a, d_t)
+    # Mostramos o imprimimos los resultados
+    print("El número total de personas contagiadas después de" + str(d_t) +" días es: " + str(t_c))
+
 ```
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
@@ -231,7 +279,23 @@ s
 
 #### :space_invader: CODIGO DEL PROGRAMA
 ```ruby
-s
+# Definir la funcion PotenciaRecursivo y que tome como argumentos n y p siendo enteros
+def PotenciaRecursivo(n : int,p : int)-> int:
+  if p == 0: #si p es igual a 0 retorna 1
+    return 1
+  else: # si no
+    # Condicion de la funcion recursiva
+    return n*PotenciaRecursivo(n,p-1) 
+
+
+if __name__ == "__main__":
+    # Se le pide al usuario los valores 
+    n = int(input("Ingrese numero: "))
+    p = int(input("Ingrese la potencia o exponenete: "))
+    # Se llama la funcion y que tome como argumentos n y p dados por e usuario previamente
+    Potencia_del_numero = PotenciaRecursivo(n,p) 
+    # imprime o muestra el resultado
+    print(str(n) + " elevado a la " + str(p) + " es "+ str( Potencia_del_numero)) 
 ```
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
@@ -256,47 +320,47 @@ Realice pruebas para calcular fibonacci con iteración o con recursión. Determi
 
 #### :space_invader: CODIGO DEL PROGRAMA
 ```ruby
-import time  # Importamos el módulo time para medir el tiempo de ejecución
+import time
 
-# Definimos la función para calcular Fibonacci con recursión
+# Se define la funcion de recursion, la cual toma como argumento n 
 def fibonacci_recursion(n):
-    if n <= 1:
-        return n
-    else:
-        return fibonacci_recursion(n-1) + fibonacci_recursion(n-2)
+    if n <= 1: # si n es menor o igual a 1 
+        return n # Devolver n
+    else: # si no 
+        return fibonacci_recursion(n-1) + fibonacci_recursion(n-2) # se suman los dos numeros anteriores
 
-# Definimos la función para calcular Fibonacci con iteración
-def fibonacci_iteration(n):
-    if n <= 1:
-        return n
-    else:
-        a, b = 0, 1
-        for i in range(n-1):
-            a, b = b, a + b
-        return b
+# Se define la funcion de iteracion, la cual toma como argumento n 
+def fibonacci_iteracion(n):
+    if n <= 1: # si n es menor o igual a 1 
+        return n # Devolver n
+    else: # si no 
+        a, b = 0, 1 # se inicializa dos varaibles como a = 0 y b = 1
+        for i in range(n-1): # Para cada elemento (i) iterar n-1 veces 
+            a, b = b, a + b # se suma el valor de a y b para crear un nuevo valor de b y a toma el valor anterior de b
+        return b # Deolver b ya que sera el el valor del número de Fibonacci actual ya que a es el numero de fibonacci anterior
 
-# Pedimos al usuario que ingrese el valor de n
 n = int(input("Ingrese el valor de n: "))
 
-# Fibonacci con recursión
-start_time_recursion = time.time()  # Tomamos el tiempo actual
-fib_recursion = fibonacci_recursion(n)  # Calculamos Fibonacci con recursión
-end_time_recursion = time.time()  # Tomamos el tiempo actual nuevamente
-timer_recursion = end_time_recursion - start_time_recursion  # Calculamos la diferencia de tiempo
-print("El tiempo de ejecución de Fibonacci con recursión fue de: " + str(timer_recursion) + " segundos.")
+# Medicion del tiempo de Fibonacci con recursión
+start_time_recursion = time.time()
+fib_recursion = fibonacci_recursion(n)
+end_time_recursion = time.time()
+timer_recursion = end_time_recursion - start_time_recursion
+print("El tiempo de ejecución de Fibonacci con recursión para n= " + str(n) + " fue de: " + str(timer_recursion) + " segundos.")
 
-# Fibonacci con iteración
-start_time_iteration = time.time()  # Tomamos el tiempo actual
-fib_iteration = fibonacci_iteration(n)  # Calculamos Fibonacci con iteración
-end_time_iteration = time.time()  # Tomamos el tiempo actual nuevamente
-timer_iteration = end_time_iteration - start_time_iteration  # Calculamos la diferencia de tiempo
-print("El tiempo de ejecución de Fibonacci con iteración fue de: " + str(timer_iteration) + " segundos.")
+# Medicion del tiempo de Fibonacci con iteración
+start_time_iteracion = time.time()
+fib_iteracion = fibonacci_iteracion(n)
+end_time_iteracion = time.time()
+timer_iteracion = end_time_iteracion - start_time_iteracion
+print("El tiempo de ejecución de Fibonacci con iteración para n= " + str(n) + " fue de: " + str(timer_iteracion) + " segundos.")
 
-# Comparamos tiempos
-if timer_recursion > timer_iteration:
+# Se compara los tiempos para imprimir una respuesta final
+if timer_recursion > timer_iteracion:
     print("Fibonacci con iteración es más rápido que con recursión.")
 else:
     print("Fibonacci con recursión es más rápido que con iteración.")
+
 
 ```
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
