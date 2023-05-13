@@ -24,7 +24,7 @@ if __name__ == '__main__':  # Funcion main
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
 <div align='center'>
-<figure> <img src="https://i.postimg.cc/13708Kv0/image.png alt="" width="700" height="auto"/></br>
+<figure> <img src="https://i.postimg.cc/5NxkvnSD/image.png alt="" width="700" height="auto"/></br>
 <figcaption><b> </b></figcaption></figure>
 </div>
 
@@ -46,7 +46,7 @@ if __name__ == "__main__": # Funcion main
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
 <div align='center'>
-<figure> <img src=" alt="" width="700" height="auto"/></br>
+<figure> <img src="https://i.postimg.cc/bNDS6jgn/image.png alt="" width="700" height="auto"/></br>
 <figcaption><b> </b></figcaption></figure>
 </div>
 
@@ -83,7 +83,7 @@ if __name__ == "__main__": # Funcion main
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
 <div align='center'>
-<figure> <img src=" alt="" width="700" height="auto"/></br>
+<figure> <img src="https://i.postimg.cc/sxwFS8QD/image.png alt="" width="700" height="auto"/></br>
 <figcaption><b> </b></figcaption></figure>
 </div>
 
@@ -111,7 +111,7 @@ if __name__ == '__main__':
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
 <div align='center'>
-<figure> <img src=" alt="" width="700" height="auto"/></br>
+<figure> <img src="https://i.postimg.cc/3NW1Sbfw/image.png alt="" width="700" height="auto"/></br>
 <figcaption><b> </b></figcaption></figure>
 </div>
 
@@ -141,7 +141,7 @@ else:
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
 <div align='center'>
-<figure> <img src=" alt="" width="700" height="auto"/></br>
+<figure> <img src="https://i.postimg.cc/kGnGq0Pn/image.png alt="" width="700" height="auto"/></br>
 <figcaption><b> </b></figcaption></figure>
 </div>
 
@@ -164,7 +164,7 @@ if __name__ == "__main__":
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
 <div align='center'>
-<figure> <img src=" alt="" width="700" height="auto"/></br>
+<figure> <img src="https://i.postimg.cc/sDgx8CJm/image.png alt="" width="700" height="auto"/></br>
 <figcaption><b> </b></figcaption></figure>
 </div>
 
@@ -199,7 +199,7 @@ if __name__ == '__main__':
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
 <div align='center'>
-<figure> <img src=" alt="" width="700" height="auto"/></br>
+<figure> <img src="https://i.postimg.cc/PqY5ZXtX/image.png alt="" width="700" height="auto"/></br>
 <figcaption><b> </b></figcaption></figure>
 </div>
 
@@ -243,7 +243,7 @@ if __name__ == '__main__':
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
 <div align='center'>
-<figure> <img src=" alt="" width="700" height="auto"/></br>
+<figure> <img src="https://i.postimg.cc/hGS58MnX/image.png alt="" width="700" height="auto"/></br>
 <figcaption><b> </b></figcaption></figure>
 </div>
 
@@ -270,7 +270,7 @@ if __name__ == '__main__':
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
 <div align='center'>
-<figure> <img src=" alt="" width="700" height="auto"/></br>
+<figure> <img src="https://i.postimg.cc/yY0KvfMj/image.png alt="" width="700" height="auto"/></br>
 <figcaption><b> </b></figcaption></figure>
 </div>
 
@@ -300,7 +300,7 @@ if __name__ == "__main__":
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
 <div align='center'>
-<figure> <img src=" alt="" width="700" height="auto"/></br>
+<figure> <img src="https://i.postimg.cc/mgTvVTNZ/image.png alt="" width="700" height="auto"/></br>
 <figcaption><b> </b></figcaption></figure>
 </div>
 
@@ -366,7 +366,7 @@ else:
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
 <div align='center'>
-<figure> <img src=" alt="" width="700" height="auto"/></br>
+<figure> <img src="https://i.postimg.cc/GpWz7QwP/image.png alt="" width="700" height="auto"/></br>
 <figcaption><b> </b></figcaption></figure>
 </div>
 
