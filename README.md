@@ -24,7 +24,7 @@ if __name__ == '__main__':  # Funcion main
 :checkered_flag: **EL PROGRAMA EJECUTADO SE VE ASI**
 
 <div align='center'>
-<figure> <img src=" alt="" width="700" height="auto"/></br>
+<figure> <img src="https://i.postimg.cc/13708Kv0/image.png alt="" width="700" height="auto"/></br>
 <figcaption><b> </b></figcaption></figure>
 </div>
 
